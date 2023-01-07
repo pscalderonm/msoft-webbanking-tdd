@@ -95,4 +95,11 @@ public class Operation
     }
     return bankAccount.State == BankAccountStates.Opened;
   }
+
+  public void PayInterest(string accountCode, decimal rate)
+  {
+    var balance = GetFinalBalance(accountCode);
+    var annualInterest = new Interest().Compute(balance, rate);
+    DoDeposit(accountCode, annualInterest);
+  }
 }

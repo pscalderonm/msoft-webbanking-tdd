@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: azure-devops-agent
+  name: another-azure-agent
 
 variables:
   buildConfiguration: 'Release'

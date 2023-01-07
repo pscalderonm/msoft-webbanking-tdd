@@ -1,3 +1,7 @@
 {
-  "dotnet-test-explorer.testProjectPath": "**/*Test.csproj"
+  "dotnet-test-explorer.testProjectPath": "**/*Test.csproj",
+  "sonarlint.connectedMode.project": {
+    "connectionId": "http-172-17-0-2-9000",
+    "projectKey": "WebBankingTDD"
+  }
 }

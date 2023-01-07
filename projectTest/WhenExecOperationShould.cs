@@ -126,4 +126,40 @@ public class WhenExecOperationShould
     //Assert
     Assert.True(isAccountValid);
   }
+
+  [Fact]
+  public void FailWhenMakingZeroDeposit()
+  {
+    //Arrange
+    var expectedFinalBalance = 100M;
+
+    var operation = new bankingLibrary.Operation();
+    var account = operation.OpenBankAccount(initialBalance:expectedFinalBalance);
+
+    //Act
+    var act = ()=>operation.DoDeposit(account.Code!, 0);
+    var act2 = ()=>operation.GetMovementCount(account.Code!);
+    
+    //Assert
+    Assert.Throws<bankingLibrary.InvalidTransactionAmountException>(act);
+    Assert.Equal(0, act2());
+  }
+
+  [Fact]
+  public void FailWhenMakingZeroWithdraw()
+  {
+    //Arrange
+    var expectedFinalBalance = 100M;
+
+    var operation = new bankingLibrary.Operation();
+    var account = operation.OpenBankAccount(initialBalance:expectedFinalBalance);
+
+    //Act
+    var act = ()=>operation.DoWithdraw(account.Code!, 0);
+    var act2= ()=>operation.GetMovementCount(account.Code!);
+    
+    //Assert
+    Assert.Throws<bankingLibrary.InvalidTransactionAmountException>(act);
+    Assert.Equal(0, act2());
+  }
 }

@@ -24,6 +24,11 @@ public class Operation
       throw new BankAccountNotFoundException();
     }
 
+    if(amount <= 0)
+    {
+      throw new InvalidTransactionAmountException();
+    }
+
     bankAccount.Balance += amount;
     bankAccount.Movements = bankAccount.Movements.Append(new AccountMovement{
       MovementType = MovementTypes.Deposit,
@@ -39,6 +44,11 @@ public class Operation
     if(!_repo.TryGetValue(accountCode, out var bankAccount))
     {
       throw new BankAccountNotFoundException();
+    }
+
+     if(amount <= 0)
+    {
+      throw new InvalidTransactionAmountException();
     }
 
     if(!bankAccount.IsOverdraftAllowed && bankAccount.Balance < amount)

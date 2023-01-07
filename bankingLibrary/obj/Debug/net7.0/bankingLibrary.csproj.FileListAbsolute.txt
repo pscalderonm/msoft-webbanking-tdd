@@ -1,0 +1,12 @@
+/workspaces/dotnet/bankingLibrary/bin/Debug/net7.0/bankingLibrary.deps.json
+/workspaces/dotnet/bankingLibrary/bin/Debug/net7.0/bankingLibrary.dll
+/workspaces/dotnet/bankingLibrary/bin/Debug/net7.0/bankingLibrary.pdb
+/workspaces/dotnet/bankingLibrary/obj/Debug/net7.0/bankingLibrary.csproj.AssemblyReference.cache
+/workspaces/dotnet/bankingLibrary/obj/Debug/net7.0/bankingLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet/bankingLibrary/obj/Debug/net7.0/bankingLibrary.AssemblyInfoInputs.cache
+/workspaces/dotnet/bankingLibrary/obj/Debug/net7.0/bankingLibrary.AssemblyInfo.cs
+/workspaces/dotnet/bankingLibrary/obj/Debug/net7.0/bankingLibrary.csproj.CoreCompileInputs.cache
+/workspaces/dotnet/bankingLibrary/obj/Debug/net7.0/bankingLibrary.dll
+/workspaces/dotnet/bankingLibrary/obj/Debug/net7.0/refint/bankingLibrary.dll
+/workspaces/dotnet/bankingLibrary/obj/Debug/net7.0/bankingLibrary.pdb
+/workspaces/dotnet/bankingLibrary/obj/Debug/net7.0/ref/bankingLibrary.dll

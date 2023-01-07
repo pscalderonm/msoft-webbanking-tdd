@@ -94,7 +94,18 @@ public class WhenExecOperationShould
   [Fact]
   public void SucceedWhenPayingDailyInterestUponAccountBalance()
   {
-    throw new NotImplementedException();
+    //Arrange
+    const decimal rate = 0.2M;
+    var expectedFinalBalance=100.0548M;
+    
+    //Act
+    var operation = new bankingLibrary.Operation();
+    var account = operation.OpenBankAccount(initialBalance:100);
+    operation.PayInterest(account.Code!, rate);
+    var finalBalance = operation.GetFinalBalance(account.Code!);
+
+    //Assert
+    Assert.Equal(expectedFinalBalance, finalBalance, 4);
   }
 
   [Fact]

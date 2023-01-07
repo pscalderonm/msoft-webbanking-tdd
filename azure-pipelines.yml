@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: another-azure-agent
+  name: default
 
 variables:
   buildConfiguration: 'Release'

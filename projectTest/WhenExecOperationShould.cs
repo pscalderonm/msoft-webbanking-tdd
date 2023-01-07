@@ -56,7 +56,7 @@ public class WhenExecOperationShould
     var act = () => operation.DoWithdraw(account.Code!, 1000);
 
     //Assert
-    Assert.Throws<bankingLibrary.OverdraftNotAllowed>(act);
+    Assert.Throws<bankingLibrary.OverdraftNotAllowedException>(act);
   }
 
   [Fact]

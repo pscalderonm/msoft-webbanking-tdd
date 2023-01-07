@@ -6,8 +6,8 @@ public class BankAccountNotFoundException:Exception{
     :base(){}
 }
 
-public class OverdraftNotAllowed:Exception{
-  public OverdraftNotAllowed()
+public class OverdraftNotAllowedException:Exception{
+  public OverdraftNotAllowedException()
   :base(){}
 }
 

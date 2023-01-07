@@ -53,7 +53,7 @@ public class Operation
 
     if(!bankAccount.IsOverdraftAllowed && bankAccount.Balance < amount)
     {
-      throw new OverdraftNotAllowed();
+      throw new OverdraftNotAllowedException();
     }
 
     bankAccount.Balance -= amount;

@@ -8,7 +8,7 @@ public enum MovementTypes
 
 public class AccountMovement
 {
-  public string Description {get; set;}
+  public string? Description {get; set;}
   public MovementTypes MovementType {get; set;}
   public decimal Amount {get; set;}
 }
